@@ -1,0 +1,41 @@
+.button
+  display: inline-block
+  padding: .5em 1em
+  text-decoration: none
+  transition: .2s ease-in all
+
+  &.is-main
+    color: white
+    background-color: $link-color
+
+    &:hover
+      background-color: darken($link-color, 15%)
+
+  &.is-premium
+    color: white
+    background-color: $premium-color
+
+    &:hover
+      background-color: darken($premium-color, 15%)
+
+  &.is-action
+    color: white
+    background-color: $action-color
+
+    &:hover
+      background-color: darken($action-color, 15%)
+
+  &.is-transparent
+    color: $text-color
+    border: 2px solid $text-color
+
+    &:hover
+      color: white
+      background-color: $text-color
+
+
+  &.is-big
+    font-size: 1.1em
+
+.button + .button
+  margin-left: 1em

@@ -1,0 +1,24 @@
+.section
+  padding: 4.5em 0
+
+  &.is-primary
+    background-color: $primary-color
+    color: white
+
+  &.is-secondary
+    background-color: $secondary-color
+    color: white
+
+.section__heading
+  text-align: center
+  margin-bottom: 3em
+  @include reset-margins
+
+  h1
+    font-size: 2em
+
+  h2
+    font-size: 1.6em
+
+.section__description
+  color: lighten( $secondary-color, 50%)
